@@ -1,10 +1,13 @@
-Sure, let's add a table of contents section at the beginning of the README file with links to each section:
-
----
-
 # Observer Pattern
 
+# Design-Patterns
+
+![Observer Pattern](https://refactoring.guru/images/patterns/content/observer/observer.png)
+
+Image source: [Refactoring Guru](https://refactoring.guru/design-patterns/observer)
+
 ## Table of Contents
+
 1. [Overview](#overview)
 2. [Problem](#problem)
 3. [Solution](#solution)
@@ -38,6 +41,7 @@ The notification mechanism works using two essential methods: the `notify` metho
 The implementation consists of several Java classes:
 
 1. **Publisher (`ConcretePublisher`)**:
+
    - The `ConcretePublisher` class implements the `Publisher` interface.
    - It maintains a map of subscribers (`subscribers`) where the key is the event type, and the value is a list of subscribers interested in that event.
    - The `subscribe` method allows subscribers to subscribe to a specific event type.
@@ -45,23 +49,28 @@ The implementation consists of several Java classes:
    - The `notify` method is responsible for notifying all subscribers interested in a particular event type when that event occurs.
 
 2. **Subscriber (`Customer`)**:
+
    - The `Customer` class implements the `Subscriber` interface.
    - It provides the `update` method, which defines how a subscriber reacts to receiving a notification about a specific event type.
 
-3. **Main Class (`Main.java`)**:
-   - The `Main` class contains the `main` method, where testing and demonstration of the Observer pattern occur.
+3. **Publisher Interface (`Publisher.java`)**:
+
+   - The `Publisher` interface defines methods for subscribing, unsubscribing, and notifying subscribers.
+
+4. **Store Class (`Store.java`)**:
+
+   - The `Store` class extends `ConcretePublisher`.
+   - It represents the concrete implementation of the publisher.
+   - It provides methods to update subscribers about different types of products (tech products and sports products).
+
+5. **Client** [Java](Java/Client.java) | [TypeScript](TypeScript/Client.ts)
+   :
+
+   - Testing and demonstration of the Observer pattern occur.
    - It creates instances of the `Store` class, representing the publisher, and `Customer` class, representing subscribers.
    - It subscribes customers (`techCustomer` and `sportsCustomer`) to different event types (tech products and sports products).
    - It triggers updates in the store for different product types (`updateTechProducts` and `updateSportsProducts` methods).
    - It demonstrates the functionality of subscribing, unsubscribing, and notifying subscribers based on events.
-
-4. **Publisher Interface (`Publisher.java`)**:
-   - The `Publisher` interface defines methods for subscribing, unsubscribing, and notifying subscribers.
-
-5. **Store Class (`Store.java`)**:
-   - The `Store` class extends `ConcretePublisher`.
-   - It represents the concrete implementation of the publisher.
-   - It provides methods to update subscribers about different types of products (tech products and sports products).
 
 ## Key Concepts:
 
@@ -81,6 +90,6 @@ The implementation consists of several Java classes:
 
 The Observer pattern facilitates communication between objects in a loosely coupled manner. It enables objects to observe and react to changes in the state of another object without needing direct dependencies. This promotes modularity, flexibility, and maintainability in software design.
 
---- 
+---
 
 Feel free to adjust any part of the explanation to better fit your needs!

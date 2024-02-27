@@ -1,4 +1,4 @@
-public class Main {
+public class Client {
     public static void main(String[] args) {
         // Create a store instance
         Store store = new Store("tech products", "sports products");
