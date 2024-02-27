@@ -1,4 +1,3 @@
-// Store class extends ConcretePublisher
 public class Store extends ConcretePublisher {
 
     // Constructor calls super constructor with given events
@@ -8,12 +7,12 @@ public class Store extends ConcretePublisher {
 
     // Method to update subscribers about tech products
     public void updateTechProducts() {
-        notify("tech products");
+        this.notify("tech products");
     }
 
     // Method to update subscribers about sports products
     public void updateSportsProducts() {
-        notify("sports products");
+        this.notify("sports products");
     }
 
 }

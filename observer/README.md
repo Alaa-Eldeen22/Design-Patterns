@@ -90,6 +90,13 @@ The implementation consists of several Java classes:
 
 The Observer pattern facilitates communication between objects in a loosely coupled manner. It enables objects to observe and react to changes in the state of another object without needing direct dependencies. This promotes modularity, flexibility, and maintainability in software design.
 
+## Resources
+
+- [Head First Design Patterns](https://www.oreilly.com/library/view/head-first-design/0596007124/)
+- [Refactoring Guru - Observer Pattern](https://refactoring.guru/design-patterns/observer)
+- [YouTube - Observer Pattern Explanation](https://youtu.be/_BpmfnqjgzQ?si=H6gy342ENs60NMHZ)
+- [Wikipedia - Observer Pattern](https://en.wikipedia.org/wiki/Observer_pattern)
+
 ---
 
 Feel free to adjust any part of the explanation to better fit your needs!
