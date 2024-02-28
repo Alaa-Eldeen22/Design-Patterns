@@ -9,7 +9,9 @@
    - [Creational Patterns](#creational-patterns)
    - [Structural Patterns](#structural-patterns)
    - [Behavioral Patterns](#behavioral-patterns)
-5. [Conclusion](#conclusion)
+5. [Recommended Resources](#recommended-resources)
+6. [Conclusion](#conclusion)
+
 
 ## Overview
 
@@ -65,6 +67,13 @@ Behavioral patterns focus on defining algorithms and communication between objec
 - Visitor
 
 **Navigate to the desired pattern directory to find its explanation and implementation.**
+
+## Recommended Resources
+
+1. [Head First Design Patterns](https://learning.oreilly.com/library/view/head-first-design/0596007124/)
+2. [Design Patterns: Elements of Reusable Object-Oriented Software (Gang of Four)](https://learning.oreilly.com/library/view/design-patterns-elements/0201633612/)
+3. [Refactoring Guru - Design Patterns](https://refactoring.guru/design-patterns)
+4. [YouTube Playlist - Design Patterns by Derek Banas](https://youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&si=52MrOXqqh344qItP)
 
 ## Conclusion
 
